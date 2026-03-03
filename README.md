@@ -5,7 +5,7 @@ This project highlights innovation, sustainability, infrastructure, empowerment,
 
 ---
 
-## [🚀 Live Dem](https://amitchandradas2004.github.io/Bangladesh-2.0-Tailwind/) 
+## [🚀 Live Demo](https://amitchandradas2004.github.io/Bangladesh-2.0-Tailwind/) 
 
 ---
 
