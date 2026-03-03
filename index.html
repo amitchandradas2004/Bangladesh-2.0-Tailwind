@@ -40,7 +40,7 @@
       <!-- Navbar section -->
       <div>
         <nav
-          class="text-center container mx-auto flex justify-between pt-4 pb-4 pl-2 md:pl-0 pr-2 md:pr-0 items-center"
+          class="text-center px-8 sm:px-3 py-5 mx-auto flex justify-between items-center bg-green-100"
         >
           <h2 class="fira-sans text-[25px] md:text-[32px]">Bangladesh 2.0</h2>
           <button
@@ -450,36 +450,45 @@
           <div
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 py-8 px-10 md:px-0"
           >
-            <div
-              class="bg-white p-5 text-center content-center fira-sans text-3xl rounded-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
+            <button
+              data-amount="100"
+              class="amount-btn bg-white p-5 text-center content-center fira-sans text-3xl rounded-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
             >
               100 Taka
-            </div>
-            <div
-              class="bg-[#C6E4D6] p-5 text-center content-center fira-sans text-3xl rounded-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
+            </button>
+
+            <button
+              data-amount="200"
+              class="amount-btn bg-white p-5 text-center content-center fira-sans text-3xl rounded-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
             >
               200 Taka
-            </div>
-            <div
-              class="bg-white p-5 text-center content-center fira-sans text-3xl rounded-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
+            </button>
+
+            <button
+              data-amount="500"
+              class="amount-btn bg-white p-5 text-center content-center fira-sans text-3xl rounded-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
             >
               500 Taka
-            </div>
-            <div
-              class="bg-white p-5 text-center content-center fira-sans text-3xl rounded-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
+            </button>
+
+            <button
+              data-amount="1000"
+              class="amount-btn bg-white p-5 text-center content-center fira-sans text-3xl rounded-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
             >
               1000 Taka
-            </div>
+            </button>
           </div>
 
           <div class="items-center content-center px-4 md:px-0">
             <input
-              type="text"
-              placeholder="Other Amount (Taka)"
+              id="donate-input"
+              type="number"
+              placeholder="Amount (Taka)"
               class="w-full bg-white text-center py-4 rounded-md outline-none"
             />
             <div class="text-center">
               <button
+                id="donate-btn"
                 class="p-3 rounded-xl bg-[#006A50] text-white inter font-semibold my-6 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-101"
               >
                 Donate Now
@@ -499,14 +508,16 @@
           </p>
         </div>
 
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center px-2 sm:px-0">
           <input
+            id="email"
             class="outline-none bg-white p-5 rounded-l-xl"
             type="email"
             placeholder="Enter your email here"
           />
 
           <button
+            id="subscribe-btn"
             class="p-5 bg-[#006A50] text-white inter font-semibold my-6 rounded-r-xl"
           >
             Subscribe
@@ -523,5 +534,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
